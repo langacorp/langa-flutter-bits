@@ -15,6 +15,19 @@ Published by **LANGA Corporation S.r.l.** under the MIT licence.
 | `vertical_toggle_switch.dart` | 71 | a toggle that slides vertically instead of sideways |
 | `custom_switch.dart` | 84 | an animated switch with the track and knob colours as parameters |
 | `current_time_display.dart` | 64 | a clock that ticks, and stops when you tell it to |
+| `api_failure.dart` | 54 | six distinct failure outcomes, and no text inside them |
+
+## Why `api_failure` is here
+
+Because collapsing outcomes is the same defect as reporting green on a check
+that measured nothing — the tools in this account exist for that. Six things
+go wrong when an app talks to a server, and "something went wrong" tells the
+person none of them.
+
+`rateLimited` in particular is not a user error: it is a defence that worked.
+
+The text stays outside the exception. One that carries its own sentence speaks
+one language, and you find out the day you need a second.
 
 ## What this is not
 
