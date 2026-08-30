@@ -44,7 +44,7 @@ CustomSwitch(
 
 ## Where this comes from
 
-LANGA runs 16 digital services across 5 networks on its own infrastructure.
+LANGA runs an ecosystem of digital services on its own infrastructure.
 These four came out of the mobile app that sits in front of some of them — the
 same app that produced [login-wall](https://github.com/langacorp/login-wall).
 
