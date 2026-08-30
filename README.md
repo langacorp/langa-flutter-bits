@@ -1,7 +1,7 @@
 # langa-flutter-bits
 
-Four small Flutter widgets pulled out of a production app, de-coupled so they
-depend on nothing but Flutter.
+Small pieces pulled out of a production Flutter app, de-coupled so they depend
+on nothing but Flutter.
 
 No theme, no state manager, no package to install. Copy the file you need.
 
@@ -15,6 +15,11 @@ Published by **LANGA Corporation S.r.l.** under the MIT licence.
 | `vertical_toggle_switch.dart` | 71 | a toggle that slides vertically instead of sideways |
 | `custom_switch.dart` | 84 | an animated switch with the track and knob colours as parameters |
 | `current_time_display.dart` | 64 | a clock that ticks, and stops when you tell it to |
+
+**Not a widget, but it belongs here:**
+
+| File | Lines | What it does |
+|---|---|---|
 | `api_failure.dart` | 54 | six distinct failure outcomes, and no text inside them |
 
 ## Why `api_failure` is here
@@ -31,7 +36,7 @@ one language, and you find out the day you need a second.
 
 ## What this is not
 
-It is not a package and not a design system. Four files, taken out of an app
+It is not a package and not a design system. A few files, taken out of an app
 because they were the only parts that did not know anything about that app.
 
 The rest of that codebase stays private: it is a product, and publishing a
@@ -58,7 +63,7 @@ CustomSwitch(
 ## Where this comes from
 
 LANGA runs an ecosystem of digital services on its own infrastructure.
-These four came out of the mobile app that sits in front of some of them — the
+These came out of the mobile app that sits in front of some of them — the
 same app that produced [login-wall](https://github.com/langacorp/login-wall).
 
 - [LANGA](https://langa.tv) — the ecosystem

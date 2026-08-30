@@ -9,6 +9,8 @@ Dates are the date of the commit, not of a release.
   and no text inside them. Collapsing them into one generic error leaves the
   person unable to act; `rateLimited` in particular is a defence that worked,
   not a mistake.
+- README and description no longer say "four": a fixed count next to a folder
+  that grows is wrong in advance.
 
 ## v1.0.0 - 2026-08-30
 
