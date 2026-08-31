@@ -3,6 +3,12 @@
 All notable changes to this project are recorded here.
 Dates are the date of the commit, not of a release.
 
+## 2026-08-31
+
+- The line counts in the README are now checked by countdrift on every push.
+  A number typed next to a file that changes is wrong in advance.
+- The claims file uses the `lines` source: nothing executes.
+
 ## v1.1.0 - 2026-08-30
 
 - Add `api_failure.dart`: six distinct failure outcomes for a call to a server,

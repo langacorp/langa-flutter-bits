@@ -1,0 +1,60 @@
+{
+  "claims": [
+    {
+      "name": "scale_on_tap",
+      "note": "The line count written in the README table, against the file itself.",
+      "pattern": "\\| `scale_on_tap\\.dart` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "lib/scale_on_tap.dart"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "vertical_toggle_switch",
+      "pattern": "\\| `vertical_toggle_switch\\.dart` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "lib/vertical_toggle_switch.dart"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "custom_switch",
+      "pattern": "\\| `custom_switch\\.dart` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "lib/custom_switch.dart"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "current_time_display",
+      "pattern": "\\| `current_time_display\\.dart` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "lib/current_time_display.dart"
+      },
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "api_failure",
+      "pattern": "\\| `api_failure\\.dart` \\| (\\d+) \\|",
+      "truth": {
+        "type": "lines",
+        "file": "lib/api_failure.dart"
+      },
+      "paths": [
+        "README.md"
+      ]
+    }
+  ]
+}
