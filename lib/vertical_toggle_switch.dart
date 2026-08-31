@@ -14,6 +14,10 @@ class VerticalToggleSwitch extends StatefulWidget {
   final Color iconOffColor;
   final EdgeInsets iconPadding;
 
+  /// Called with the new state on every tap. Optional: without it the widget
+  /// still works, but the caller never learns what it is showing.
+  final ValueChanged<bool>? onChanged;
+
   VerticalToggleSwitch({
     this.width = 40,
     this.height = 80,
@@ -26,6 +30,7 @@ class VerticalToggleSwitch extends StatefulWidget {
     this.iconOnColor = Colors.white,
     this.iconOffColor = Colors.white,
     this.iconPadding = const EdgeInsets.all(5),
+    this.onChanged,
   });
 
   @override
@@ -39,6 +44,7 @@ class _VerticalToggleSwitchState extends State<VerticalToggleSwitch> {
     setState(() {
       isOn = !isOn;
     });
+    widget.onChanged?.call(isOn);
   }
 
   @override

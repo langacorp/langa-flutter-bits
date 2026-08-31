@@ -21,3 +21,10 @@ Dates are the date of the commit, not of a release.
 ## v1.0.0 - 2026-08-30
 
 First release: four widgets pulled out of a production app and de-coupled.
+
+## 2026-08-31
+
+- `VerticalToggleSwitch` kept its state to itself: the caller could not learn
+  what it was showing. It takes an optional `onChanged` now. Nothing breaks.
+- The Use section documented two files out of five. It documents all five,
+  `api_failure` included, with the lookup that keeps the text outside.

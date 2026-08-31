@@ -12,7 +12,7 @@ Published by **LANGA Corporation S.r.l.** under the MIT licence.
 | File | Lines | What it does |
 |---|---|---|
 | `scale_on_tap.dart` | 69 | wraps any widget so it scales and fades while pressed |
-| `vertical_toggle_switch.dart` | 71 | a toggle that slides vertically instead of sideways |
+| `vertical_toggle_switch.dart` | 77 | a toggle that slides vertically instead of sideways |
 | `custom_switch.dart` | 84 | an animated switch with the track and knob colours as parameters |
 | `current_time_display.dart` | 64 | a clock that ticks, and stops when you tell it to |
 
@@ -56,6 +56,38 @@ CustomSwitch(
   trackColor: Colors.indigo,   // optional
   knobColor: Colors.orange,    // optional
 )
+```
+
+```dart
+VerticalToggleSwitch(
+  iconOn: CupertinoIcons.phone,
+  iconOff: CupertinoIcons.envelope,
+  onChanged: (isOn) => setState(() => calling = isOn),
+)
+```
+
+The switch holds its own state and tells you about it through `onChanged`.
+Everything else — size, radius, icons, colours, padding — has a default.
+
+```dart
+CurrentTimeDisplay(
+  isRunning: true,                                  // false stops the tick
+  textStyle: const TextStyle(fontSize: 22),         // optional
+)
+```
+
+`api_failure` is not a widget: it is six outcomes and no text. The caller owns
+the words, so the same failure can speak a second language later.
+
+```dart
+throw ApiFailure(ApiFailureKind.rateLimited, retryAfter: const Duration(seconds: 30));
+
+// at the edge, where the words live:
+final message = failure.resolve((kind, retryAfter) => switch (kind) {
+  ApiFailureKind.rateLimited => "Too many attempts. Try again in ${retryAfter?.inSeconds}s.",
+  ApiFailureKind.invalidCredentials => "That password is not right.",
+  _ => "Something went wrong.",
+});
 ```
 
 `current_time_display.dart` needs `intl`. The other three need only Flutter.
