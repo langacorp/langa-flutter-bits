@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+type: software
+title: "langa-flutter-bits"
+abstract: "Small Flutter pieces pulled out of a production app and de-coupled: interaction widgets, and a failure model that keeps six outcomes distinct instead of collapsing them into one error. Flutter and nothing else."
+authors:
+  - name: "LANGA Corp. Srl"
+    city: Milan
+    country: IT
+    website: "https://langa.tv"
+repository-code: "https://github.com/langacorp/langa-flutter-bits"
+url: "https://github.com/langacorp/langa-flutter-bits"
+license: MIT
+version: "1.2.0"
+date-released: "2026-08-31"
