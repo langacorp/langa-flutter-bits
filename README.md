@@ -1,5 +1,7 @@
 # langa-flutter-bits
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22299108-blue)](https://doi.org/10.5281/zenodo.22299108)
+
 Small pieces pulled out of a production Flutter app, de-coupled so they depend
 on nothing but Flutter.
 
